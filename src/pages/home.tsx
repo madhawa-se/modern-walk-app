@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Card from "../components/card";
 import CategoryCard from "../components/category-card";
+import GridView from "../components/grid-view";
 import { CategoryMapKey } from "../models/category-map";
 import API from "../services/api-service";
 function Home() {
@@ -25,8 +26,8 @@ function Home() {
     return (
         <>
             <div>Home</div>
-            <div className="product-row">
-                {products.map(product => <Card product={product}></Card>)}
+            <div>
+                <GridView products={products} elementsPerRow={4}></GridView>
             </div>
             <div className="flex">
                 <CategoryCard category="Men" onClick={() => handleClick('mens-clothing')}></CategoryCard>
