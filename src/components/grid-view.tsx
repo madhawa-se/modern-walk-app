@@ -9,6 +9,7 @@ interface GridViewProps {
 
 const GridView: React.FC<GridViewProps> = ({ products, elementsPerRow }) => {
   const itemWidth = calcWidth(elementsPerRow);
+  console.log(itemWidth);
 
   return (
     <div className="grid-container">
