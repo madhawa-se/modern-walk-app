@@ -1,14 +1,16 @@
-const Card = () => {
+import { Product } from "../models/interfaces/product-interface";
+
+const Card: React.FC<{ product: Product }> = ({ product: { title, price, description, image } }) => {
     return (<>
         <article className="shadow-md">
 
-            <div className="font-bold text-2xl">Mens Cotton Jacket</div>
+            <div className="font-bold text-2xl">{title}</div>
             <figure>
-
+                <img src={image} alt="Example Image" />
             </figure>
             <div>
-                <div className="text-3xl">Rs 55.99</div>
-                <p>Great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking...</p>
+                <div className="text-3xl">{price}</div>
+                <p>{description}</p>
             </div>
 
         </article>

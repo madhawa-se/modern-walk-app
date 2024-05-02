@@ -1,5 +1,5 @@
 const config = {
-    baseURL: 'https://api.example.com'
+    baseURL: 'https://fakestoreapi.com'
   };
   
   export default config;
