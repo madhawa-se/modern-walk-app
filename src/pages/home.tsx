@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Card from "../components/card";
 import CategoryCard from "../components/category-card";
-import { categoryMap, CategoryMapKey } from "../models/category-map";
+import { CategoryMapKey } from "../models/category-map";
 import API from "../services/api-service";
 function Home() {
 
