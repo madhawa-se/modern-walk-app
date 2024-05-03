@@ -40,7 +40,7 @@ function Home() {
                 }
             </div>
 
-            <div className="mt-12">
+            <div className="mt-12 mb-6">
                 <h2 className="text-2xl font-bold">Categories</h2>
                 <div className="mt-4 flex flex-wrap">
 
