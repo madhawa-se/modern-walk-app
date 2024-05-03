@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Card from "../components/card";
-import { categoryMap,CategoryMapKey } from "../models/category-map";
+import GridView from "../components/grid-view";
+import { categoryMap, CategoryMapKey } from "../models/category-map";
 import API from "../services/api-service";
 
 function Category() {
@@ -23,8 +24,10 @@ function Category() {
 
     return (
         <>
-             <div className="product-row">
-                {products.map(product => <Card product={product}></Card>)}
+            <div className="product-row">
+                <div>
+                    <GridView products={products} elementsPerRow={4}></GridView>
+                </div>
             </div>
         </>
     )

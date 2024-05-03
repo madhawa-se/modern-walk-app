@@ -25,13 +25,18 @@ function Home() {
 
     return (
         <>
-            <div>Home</div>
             <div>
                 <GridView products={products} elementsPerRow={4}></GridView>
             </div>
-            <div className="flex">
-                <CategoryCard category="Men" onClick={() => handleClick('mens-clothing')}></CategoryCard>
-                <CategoryCard category="Women" onClick={() => handleClick('womens-clothing')}></CategoryCard>
+            <div className="flex flex-wrap">
+
+                <div className="w-1/2">
+                    <CategoryCard className="bg-primary m-5" category="Men's Clothing" onClick={() => handleClick('mens-clothing')}></CategoryCard>
+                </div>
+
+                <div className="w-1/2">
+                    <CategoryCard className="bg-secondary m-5" category="Women's Clothing" onClick={() => handleClick('womens-clothing')}></CategoryCard>
+                </div>
             </div>
         </>
     )
