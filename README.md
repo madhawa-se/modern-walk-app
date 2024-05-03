@@ -1,6 +1,6 @@
 # Modern Walk React App
 
-![Modern Walk Logo](/src/assets/logo.png)
+![Modern Walk Logo](/src/assets/logo-mini.png)
 
 This is a React based fashion retail web app.
 
