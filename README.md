@@ -28,8 +28,16 @@ To run the app locally, follow these steps:
 ## Assumptions
 
 - The home page can contain different categories.
-- To change the row amount (assuming this refers to the layout or display), further instructions will be added in the future.
+- Prices returned from the API are in USD
 
+
+## Guide
+
+To change the number of cards displayed per row, you can pass a custom count to the GridView. However, on smaller screens, this custom count won't be used; instead, the configured count specific to that screen size will be applied 
+
+```js
+<GridView products={products} elementsPerRow={4}></GridView>
+```
 
 ## Note
 

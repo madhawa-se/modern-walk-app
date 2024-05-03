@@ -1,23 +1,17 @@
 .card {
     cursor: pointer;
+    
 
     .preview {
-        width: 250px;
-        height: 250px;
-        transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
-
+        width: 50%;
+        height: 50%;
+        transition: transform 0.5s ease-in-out;
         .preview--img {
             object-fit: contain;
         }
     }
-
-    .preview-wrap {
-        width: 300px;
-        height: 300px;
-    }
 }
 
 .card:hover .preview {
-    width: 300px;
-    height: 300px;
+    transform: scale(1.1);
 }
