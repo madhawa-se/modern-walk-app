@@ -1,5 +1,4 @@
 import React from 'react';
-import { CardType } from '../models/card-type';
 import './category-card.scss';
 
 const CategoryCard: React.FC<{ onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void; category: string; className: string }> = ({ onClick, category, className }) => (

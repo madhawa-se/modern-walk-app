@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Card from "../components/card";
 import GridView from "../components/grid-view";
 import { categoryMap, CategoryMapKey } from "../models/category-map";
 import API from "../services/api-service";

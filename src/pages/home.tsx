@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Card from "../components/card";
 import CategoryCard from "../components/category-card";
 import GridView from "../components/grid-view";
 import { CategoryMapKey } from "../models/category-map";
