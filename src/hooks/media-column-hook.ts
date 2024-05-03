@@ -21,14 +21,11 @@ function getMqls(columnQueries: BreakColumn[]) {
 export function useMediaQuery(columnQueries:BreakColumn[]) {
 
     const { mQueries, queryMap } = getMqls(columnQueries);
-    console.log("queryMap ", queryMap);
     const [matchCoulmn, setMatches] = useState(queryMap[0]);
 
 
     const mediaTrigger = (event: any) => {
-        console.log("event ", event);
         const mappedItem = queryMap.find(mItem => {
-            console.log("checking ", mItem.queryStr, event.media);
             return mItem.queryStr === event.media
         });
         if (mappedItem) {
