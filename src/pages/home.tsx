@@ -24,21 +24,27 @@ function Home() {
     }
 
     return (
-        <>
-            <div>
+        <div className="page mx-10">
+            <div className="mt-12">
+                <h2 className="text-2xl font-bold">Flash Sale</h2>
                 <GridView products={products} elementsPerRow={4}></GridView>
             </div>
-            <div className="flex flex-wrap">
 
-                <div className="w-1/2">
-                    <CategoryCard className="bg-primary m-5" category="Men's Clothing" onClick={() => handleClick('mens-clothing')}></CategoryCard>
-                </div>
+            <div className="mt-12">
+                <h2 className="text-2xl font-bold">Categories</h2>
+                <div className="mt-4 flex flex-wrap">
 
-                <div className="w-1/2">
-                    <CategoryCard className="bg-secondary m-5" category="Women's Clothing" onClick={() => handleClick('womens-clothing')}></CategoryCard>
+                    <div className="w-1/2">
+                        <CategoryCard className="bg-primary mr-5" category="Men's Clothing" onClick={() => handleClick('mens-clothing')}></CategoryCard>
+                    </div>
+
+                    <div className="w-1/2">
+                        <CategoryCard className="bg-secondary ml-5" category="Women's Clothing" onClick={() => handleClick('womens-clothing')}></CategoryCard>
+                    </div>
                 </div>
             </div>
-        </>
+
+        </div>
     )
 }
 

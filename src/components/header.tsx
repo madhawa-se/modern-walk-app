@@ -6,7 +6,7 @@ function Header() {
     
     return (
         <>
-            <header className="flex items-center justify-between px-4 py-3 text-white">
+            <header className="flex items-center justify-between px-10 py-3 text-white">
                 <div className="w-16">
                     <img src={logo} alt="Logo" className="h-8 w-auto" />
                 </div>

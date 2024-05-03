@@ -24,16 +24,13 @@ function Category() {
 
     return (
         <>
-            <div className="product-row">
-                <div>
+            <div className="page product-row mx-10">
+                <div className="mt-12">
                     <GridView products={products} elementsPerRow={4}></GridView>
                 </div>
             </div>
         </>
     )
 }
-
-// const categoryFilter=categoryMap[category];
-
 
 export default Category;

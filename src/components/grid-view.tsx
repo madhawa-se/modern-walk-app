@@ -12,10 +12,10 @@ const GridView: React.FC<GridViewProps> = ({ products, elementsPerRow }) => {
   console.log(itemWidth);
 
   return (
-    <div className="grid-container">
+    <div className="grid-container -mx-4">
       <div className="product-row flex flex-wrap items-stretch">
         {products.map(product => <div className="flex flex-col	items-stretch" style={{ width: '33%' }}>
-          <div className="m-5">
+          <div className="gap-4 h-full p-4">
             <Card product={product} type="primary" key={product.id}></Card>
           </div>
         </div>)}
