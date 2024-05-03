@@ -16,7 +16,7 @@ function Header() {
 
                 <h1 className="text-center text-gray-900 text-3xl font-bold">Modern Walk</h1>
 
-                <Menu></Menu>
+                <Menu/>
             </header>
 
 

@@ -3,7 +3,10 @@ import { Product } from "../models/interfaces/product-interface";
 import { toLKR } from "../utils/currency";
 import { truncate } from "../utils/text-op";
 import './card.scss'
-const Card: React.FC<{ product: Product, type: CardType }> = ({ product: { title, price, description, image }, type = 'primary' }) => {
+const Card: React.FC<{ product: Product, type: CardType }> = ({ product, type = 'primary' }) => {
+
+    const { title, price, description, image } = product;
+
     return (<>
         <article className={`card h-full flex flex-col shadow-md rounded-3xl pt-4 card card--${type}`}>
             <div className='card-content p-4 text-center'>

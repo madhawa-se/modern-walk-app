@@ -15,7 +15,6 @@ function Home() {
         setloading(true);
         API.get("/products?limit=5").then(({ data }) => {
             setProducts(data);
-            console.log({ data });
         }).catch(e => {
             console.error("error", e);
         }).finally(() => {

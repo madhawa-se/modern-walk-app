@@ -9,7 +9,7 @@ function Category() {
 
     let { categoryKey } = useParams<{ categoryKey: CategoryMapKey }>();
     if (!categoryKey) {
-        return <>no category</>
+        return <div>no category</div>
     }
     const category = categoryMap[categoryKey];
     const [products, setProducts] = useState([]);
@@ -19,8 +19,8 @@ function Category() {
         setloading(true);
         API.get(`/products/category/${category}?limit=20`).then(({ data }) => {
             setProducts(data);
-            console.log({ data });
         }).catch(e => {
+            console.error(e);
             alert("error occured");
         }).finally(() => {
             setloading(false);
@@ -31,12 +31,10 @@ function Category() {
         <>
             <div className="page product-row mx-10">
                 <div className="mt-12">
-
                     {
                         loading ?
                             <Loading></Loading> :
                             <GridView products={products} elementsPerRow={4}></GridView>
-
                     }
                 </div>
             </div>

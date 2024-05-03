@@ -9,12 +9,11 @@ interface GridViewProps {
 
 const GridView: React.FC<GridViewProps> = ({ products, elementsPerRow }) => {
   const itemWidth = calcWidth(elementsPerRow);
-  console.log("itemWidth",itemWidth);
 
   return (
     <div className="grid-container -mx-4">
       <div className="product-row flex flex-wrap items-stretch">
-        {products.map(product => <div className="flex flex-col	items-stretch" style={{ width: itemWidth }}>
+        {products.map(product => <div key={product.id} className="flex flex-col	items-stretch" style={{ width: itemWidth }}>
           <div className="gap-4 h-full p-4">
             <Card product={product} type="primary" key={product.id}></Card>
           </div>
