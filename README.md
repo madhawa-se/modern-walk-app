@@ -1,6 +1,6 @@
 # Modern Walk React App
 
-![Modern Walk Logo](https://raw.githubusercontent.com/madhawa-se/modern-walk-app/master/src/assets/logo.png?token=GHSAT0AAAAAACOEJDDVTP3GEK2ZNNOEBGK4ZRUOIRQ)
+![Modern Walk Logo](/src/assets/logo.png)
 
 This is a React based fashion retail web app.
 
