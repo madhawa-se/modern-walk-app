@@ -1,4 +1,3 @@
-import { useMediaQuery } from "../hooks/media-column-hook";
 import { CardType } from "../models/card-type";
 import { Product } from "../models/interfaces/product-interface";
 import { toLKR } from "../utils/currency";
