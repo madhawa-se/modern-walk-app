@@ -1,5 +1,5 @@
 const config = {
-  baseURL: 'https://fakestoreapi.com'
+  baseURL: process.env.API_ENDPOINT
 };
 
 export default config;

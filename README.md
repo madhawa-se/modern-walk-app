@@ -31,6 +31,10 @@ To run the app locally, follow these steps:
 - To change the row amount (assuming this refers to the layout or display), further instructions will be added in the future.
 
 
+## Note
+
+Sample logo created using an AI generator.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
